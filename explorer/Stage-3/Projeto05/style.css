@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* 
+font-family: 'Palanquin', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
+
+
+:root{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #EFF1FF;
+    margin: 0 auto;
+    font-family: 'Palanquin', sans-serif;
+    
+} 
+
+header{
+    text-align: center;
+    background: #8E9AAF;
+}
+
+header h1{
+    font-family: 'Staatliches', cursive;
+    background: #CBC0D3;
+    color: white;
+}
+
+main{
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.4rem 3.2rem;
+    max-width: 40rem;
+}
+
+main > p{
+    color: #23053A;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Palanquin', sans-serif;
+    line-height: 1.5rem; 
+    margin-bottom: 4rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    position: relative;
+}
+
+.card p{
+    font-family: 'Staatliches', cursive;
+    color: #4A4E69;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #CBC0D3;
+    padding: 1rem 2.3rem;
+    border-radius: 2rem;
+    font-size: 2.0rem;
+
+}

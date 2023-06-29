@@ -1,0 +1,73 @@
+
+:root{
+    font-size: 62.5%;
+}
+
+
+body{
+    background-image: url('assets/fundo.svg');
+    
+
+}
+
+main{
+    margin-top: 22.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.buracos{
+    display: flex;
+    position: relative;
+    gap: 1.5rem;
+
+}
+
+.buracos .imgs{
+    width: 22rem;
+    height: 21.1rem;
+    background-image: url('assets/toupeira6.svg');
+    background-repeat: no-repeat;
+}
+
+
+.buracos .imgs:hover{
+    position: relative;
+    animation: toupeira 1500ms ease infinite;
+    z-index: 2;
+}
+
+
+
+@keyframes toupeira {
+    0%{
+        background-image: url("assets/toupeira1.svg");
+        transform: translateY(0px);
+    }
+
+    20%{
+        background-image: url("assets/toupeira2.svg");
+        transform: translateY(0px);
+    }
+    40%{
+        background-image: url("assets/toupeira3.svg");
+        transform: translateY(0px);
+    }
+
+    60%{
+        background-image: url("assets/toupeira4.svg");
+        transform: translateY(0px);
+    }
+    
+    80%{
+        background-image: url("assets/toupeira5.svg");
+        transform: translateY(0px);
+    }
+
+    100%{
+        background-image: url("assets/toupeira6.svg");
+    }
+}

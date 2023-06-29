@@ -26,16 +26,24 @@ body{
 header{
     text-align: center;
     background: #8E9AAF;
+    padding: 3.2rem 0 2.9rem 0; 
+      
 }
 
 header h1{
     font-family: 'Staatliches', cursive;
     background: #CBC0D3;
     color: white;
+    font-size: 4rem;
+    
+}
+header > img{
+    width: 13.7rem;
+    height: 13.7rem; 
 }
 
 main{
-    margin: 0 auto;
+    margin: 0 auto 6rem;
     text-align: center;
     padding: 1.4rem 3.2rem;
     max-width: 40rem;
@@ -46,8 +54,10 @@ main > p{
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Palanquin', sans-serif;
-    line-height: 1.5rem; 
+    font-weight: 400; 
     margin-bottom: 4rem;
+    line-height: 1.7rem; 
+
 }
 
 img{
@@ -69,5 +79,49 @@ img{
     padding: 1rem 2.3rem;
     border-radius: 2rem;
     font-size: 2.0rem;
+
+}
+
+.card img{
+    border-radius: 2rem;
+}
+
+
+.card + .card{
+    margin-top: 3.2rem;
+}
+
+@media (min-width: 800px) {
+
+    main{
+        max-width: 90vw;
+    }
+    #cards {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  
+    .card {
+        position: relative;
+        width: 45%; /* Ajuste a largura dos cartões conforme necessário */
+        margin: 0.5rem;
+    }
+
+    .card img{
+        min-width: 30vw;
+        max-height: 40vh;
+        object-fit: cover;
+    }
+
+    .card + .card{
+        margin-top: 0;
+    }
+    .card:nth-child(2) {
+        order: 3; /* Define a ordem para a terceira posição */
+    }
+
+
 
 }

@@ -18,3 +18,42 @@ let student = {
 console.log(student)
 
 console.log(`Nome: ${student.nome}, Idade: ${student.idade}, Inscrito: ${student.isSubscribed}`)
+
+
+//array
+let students = []
+
+
+students = [
+    student
+]
+
+
+console.log(students)
+
+console.log(students[0])
+
+
+const john ={
+    nome: "john",
+    age: 23,
+    weight: 75.8,
+    isSubscribed: true,
+}
+
+
+//assim 
+students = [
+    student,
+    john
+]
+
+//ou assim
+students[1] = john
+
+console.log(students)
+
+
+//extra
+console.log(a)
+var a = 1

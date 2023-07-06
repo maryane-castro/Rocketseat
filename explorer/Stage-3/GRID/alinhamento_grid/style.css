@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+
+    /* place-content: center; */
+    /* align-items: center; */
+}
+
+.grid > div{
+    background: cornflowerblue;
+}
+
+
+.grid div:nth-child(1){
+    align-self: center;
+}

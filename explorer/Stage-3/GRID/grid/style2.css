@@ -1,0 +1,33 @@
+/* row */
+
+
+body{
+    margin: 0;
+}
+
+#app{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    height: 100vh;
+    border: 2px solid green;
+  }
+  
+#app > *{
+    border: 1px solid red;
+}
+
+
+
+#app header{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+#app main{
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+#app div:nth-child(3){
+    
+} 

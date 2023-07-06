@@ -1,0 +1,38 @@
+/* area */
+
+
+body{
+    margin: 0;
+}
+
+#app{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+
+    height: 100vh;
+    border: 2px solid green;
+    /* gap: 20px */
+    row-gap: 30px;
+    column-gap: 10px;
+  }
+  
+#app > *{
+    border: 1px solid red;
+}
+
+
+
+#app header{
+    grid-area: header;
+}
+#app main{
+    grid-area: main;
+}
+
+#app footer{
+    grid-area: footer;
+}
+

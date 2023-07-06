@@ -1,0 +1,39 @@
+/* area */
+
+
+body{
+    margin: 0;
+}
+
+#app{
+    display: grid;
+
+    /*area, rows*/
+    grid-template: 
+    "A B B" 80px
+    "A B B" 40px
+    "A C D" 50px / 80px 1fr 2fr;
+
+    height: 100vh;
+    border: 2px solid green;
+    gap: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+
+  }
+  
+#app > *{
+    border: 1px solid red;
+}
+
+
+
+#app header{
+    grid-area: A;
+}
+#app main{
+    grid-area: B;
+}
+
+
+

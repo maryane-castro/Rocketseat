@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%) no-repeat;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+main{
+    background-color: white;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.115);
+    border-radius: 6px;
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    width: min(42.8rem, 90%);
+    height: 27.4rem;
+    margin-top: -11rem;
+    text-align: center;
+}

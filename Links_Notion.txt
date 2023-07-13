@@ -8,3 +8,8 @@ DOM
 https://xesque.rocketseat.dev/platform/1660222363729-attachment.pdf
 https://xesque.rocketseat.dev/platform/1660222465259-attachment.pdf
 https://xesque.rocketseat.dev/platform/1660222522404-attachment.pdf
+
+
+
+es6 MODULES : pra exportar e importar arquivos js
+https://storage.googleapis.com/golden-wind/explorer/description-assets/nivel-05/IMC/ES-Modules.pdf

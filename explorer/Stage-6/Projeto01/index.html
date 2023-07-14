@@ -4,21 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>SPA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        :root {
+            font-size: 62.5%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 5.4rem;
+            font-size: 2.2rem;
+            margin: 4rem 7.2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:target {
+            font-weight: bold;
+            color: aqua;
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <a href="/" onclick="route()">Home</a>
-        <a href="/about" onclick="route()">Sobre</a>
-        <a href="/contact" onclick="route()">Contato</a>
-        <a href="/404" onclick="route()">404</a>
+        <img src="assets/logo.svg" alt="" href="/">
+        <a href="#/" onclick="route()">Home</a>
+        <a href="#/about" onclick="route()">O Universo</a>
+        <a href="#/contact" onclick="route()">Exploração</a>
     </nav>
 
     <div id="app"></div>
-
 
     <script src="src/index.js" type="module"></script>
 
 
 </body>
-</html>
+</html> 

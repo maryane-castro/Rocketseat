@@ -13,6 +13,7 @@ body{
     background: #000;
     color: white;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 
 #app{
@@ -25,18 +26,48 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    
+} 
 
 
 header{
-    margin-bottom: 8.7rem;
+    margin-bottom: 4.7rem;
 }
 
 
 
-header h1{
-    font-size: 2.6rem;
+
+
+main {
+    max-width: 80rem;
+    margin: 9rem auto;
+    padding: 2rem;
 }
+
+.table-container {
+    max-height: 50vh; /* Defina o tamanho fixo da tabela aqui */
+    overflow-y: auto; /* Adicione a barra de rolagem quando o conteúdo exceder o tamanho máximo */
+}
+
+
+thead {
+    background: #092D38;
+    height: 3.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+thead th {
+    padding: 1.6rem;
+}
+
+/* Outros estilos da tabela ... */
+
+
+
+
+
 
 
 
@@ -73,10 +104,21 @@ td img{
 
 table{
     width: 100%;
-    /* border: 1px solid red; */
-    text-align: left;
-    border-collapse: collapse;
+    
 }
+
+
+#border-table{
+    text-align: center;
+    overflow:hidden;
+    border-collapse: collapse;
+    /* border: 2px solid #092D38; */
+    border-radius: 1rem;
+    box-shadow: 0 0 0 0.1rem  #16779481;
+}
+
+
+
 
 
 table thead{
@@ -110,6 +152,9 @@ td#user a{
 
 
 
+
+
+
 tbody td{
     padding: 1.6rem 2rem;
 }
@@ -133,6 +178,7 @@ tr td button{
     background-color: transparent;
     color: #d33543;
     border: none;
+    cursor: pointer;
 }
 
 table tr:nth-child(even){
@@ -147,10 +193,30 @@ table tr:nth-child(odd){
     display: none;
 }
 
-#screen2{
+.screen2{
     width: 100%;
     height: 50rem;
     background-color: #030B0D;
     text-align: center;
+
+}
+
+#center{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    opacity: 60%;
+}
+
+#center img{
+    width: 10rem;
+    height: 13rem;
+}
+
+a{
+    text-align: left;
 }
 

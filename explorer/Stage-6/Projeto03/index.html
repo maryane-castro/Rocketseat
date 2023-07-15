@@ -1,3 +1,8 @@
+<!-- 
+figma
+    https://www.figma.com/file/5lOhHjTBnPfQ0S46tA8TN9/%5BDesafios-Explorer%5D-GitFav-(Copy)-(Copy)?type=design&node-id=104-48&mode=design&t=s8CFg6YIujQLfdVU-0
+ -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,62 +14,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" type="module" defer></script>
 </head>
 <body>
      <div id="app">
         <header>
-            <h1>{&Star;} GitFav</h1>
-            <div id="input-search">
+            <img src="assets/logo.svg" alt="">
+            <div id="search">
                 <input type="text" placeholder="Digite o Github username que quer favoritar">
                 <button> &star;Favoritar</button>
             </div>
         </header>
         <main>
-             <table>
-                <thead>
-                    <tr>
-                        <th>User</th>
-                        <th>Repositories</th>
-                        <th>Followers</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody id="screen1" class="hide">
-                    <tr>
-                        <td id="user">
-                            <img src="https://github.com/maryane-castro.png" alt="">
-                            <a href="">
-                                <p>Maryane Castro</p>
-                                <sp an>maryane-castro</span>
-                            </a>
-                        </td>
-                        <td id="repositories"> 123 </td>
-                        <td id="followers">1234</td>
-                        <td id="remove">
-                            <button>Remover</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="user">
-                            <img src="https://github.com/maryane-castro.png" alt="">
-                            <a href="">
-                                <p>Maryane Castro</p>
-                                <span>maryane-castro</span>
-                            </a>
-                        </td>
-                        <td id="repositories"> 123 </td>
-                        <td id="followers">1234</td>
-                        <td id="remove">
-                            <button>Remover</button>
-                        </td>
-                    </tr>
-                </tbody>
-                <tbody id="screen2">
-                    <tr>
-                        <td colspan="4">Nenhum favorito ainda</td>
-                    </tr>
-                </tbody>
-             </table>
+             <div class="table-container">
+                 <table id="border-table">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Repositories</th>
+                            <th>Followers</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!-- algum -->
+                    <tbody class="screen1">
+                 
+                 
+                    </tbody>
+                    <!-- nenhum -->
+                    <tbody class="screen2 hide">
+                        <tr>
+                            <td colspan="4">
+                                <div id="center">
+                                    <img src="assets/star.svg" alt="">
+                                    <h2>Nenhum favorito ainda</h2>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                 </table>
+             </div>
         </main>
      </div>
 </body>

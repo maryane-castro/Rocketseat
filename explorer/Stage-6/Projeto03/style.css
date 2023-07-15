@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background: #000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#app{
+    max-width: 80rem;
+    margin: 9rem auto;
+    padding: 2rem;
+}
+
+#app header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header{
+    margin-bottom: 8.7rem;
+}
+
+
+
+header h1{
+    font-size: 2.6rem;
+}
+
+
+
+header input{
+    height: 3.56rem;
+    width: 30rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: #06181C;
+    padding: 0 1rem; 
+
+}
+
+header button{
+    
+    border: none;
+    padding: 1rem; 
+    border-radius: 5px;
+    background: #065E7C;
+    cursor: pointer;
+    color: white;
+}
+
+header button:hover{
+    background: #1699c4;
+}
+
+
+td img{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+table{
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: left;
+    border-collapse: collapse;
+}
+
+
+table thead{
+    background: #092D38;
+    height: 3.2rem;
+}
+
+
+thead th{
+    padding: 1.6rem;
+}
+
+
+td#user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+tbody td{
+    padding: 1.6rem 2rem;
+}
+
+/* tbody td tr{
+    display: flex;
+    align-self: center;
+} */
+
+
+td#user a{
+    color: white;
+    text-decoration: none;
+}
+
+
+tr td button{
+    background-color: transparent;
+    color: #d33543;
+    border: none;
+}
+

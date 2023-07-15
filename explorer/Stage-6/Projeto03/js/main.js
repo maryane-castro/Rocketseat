@@ -74,6 +74,7 @@ class Favoritos{
         
     }
 
+    
     update(){
         this.removeAllTr()
 

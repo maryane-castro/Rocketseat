@@ -1,0 +1,21 @@
+root paraments : são obrigatórios:
+app.get("/message/:id/:user", (request, response) => {
+    //desestruturar
+    const { id, user } = request.params;
+    
+    response.send(`
+        Id da mensagem: ${id}.
+        User da mensagem: ${user}.
+    `)
+}) 
+
+
+query paraments : não são obtigatórios:
+app.get("/users", (request, response) =>{
+    const {page, limit} =  request.query;
+
+    response.send(`
+        Pagina: ${page}.
+        Limite: ${limit}
+    `)
+})

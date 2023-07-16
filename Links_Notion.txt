@@ -13,3 +13,8 @@ https://xesque.rocketseat.dev/platform/1660222522404-attachment.pdf
 
 es6 MODULES : pra exportar e importar arquivos js
 https://storage.googleapis.com/golden-wind/explorer/description-assets/nivel-05/IMC/ES-Modules.pdf
+
+
+
+SSH
+https://efficient-sloth-d85.notion.site/Configurando-SSH-f4996d82d1a242709b789fc7e12f41a7

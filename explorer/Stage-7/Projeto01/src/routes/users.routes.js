@@ -6,23 +6,35 @@ const usersRoutes = Router();
 
 
 
-function myMidlleware(request, response, next){
-    //console.log('midlleware')
-    if (request.body.isAdmin){
-        next();   //next chama a procima função(usersController.create)
-    }
-
-    response.send('não foi possivel')
-    
-}
-
-
 
 
 
 
 const usersController = new UserController()
-usersRoutes.post("/", myMidlleware ,usersController.create)
+usersRoutes.post("/", usersController.create)
 
 
 module.exports = usersRoutes;
+
+
+
+
+/*
+
+MIDELLEWARE
+function myMidlleware(request, response, next){
+    //console.log('midlleware')
+    if (!request.body.isAdmin){
+        return response.json({message: 'user unauthorized'})
+    }
+    
+    next();   //next chama a procima função(usersController.create)
+    
+}
+
+usersRoutes.post("/", myMidlleware ,usersController.create)
+
+
+
+
+*/

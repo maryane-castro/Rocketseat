@@ -38,8 +38,8 @@ class UserController {
             throw new AppError("Esse email já está em uso!")
         }
 
-        user.name = name ?? user.name;
-        user.email = email ?? user.email;
+        user.name = name !== undefined ? name : user.name;
+        user.email = email !== undefined ? email : user.email;
 
         if ( password && !old_password ){
             throw new AppError("Você precisa informar a senha antiga para definir a nova senha!")

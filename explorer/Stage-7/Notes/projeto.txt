@@ -1,0 +1,12 @@
+Iniciar o Projeto
+    npm init -y
+
+Instalar o Express
+    npm install express --save
+
+Criar pasta SRC
+    - /controllers
+    - /databasee
+    - /routes
+    - /utils
+    - server.js

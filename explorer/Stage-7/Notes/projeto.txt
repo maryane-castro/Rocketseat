@@ -4,9 +4,66 @@ Iniciar o Projeto
 Instalar o Express
     npm install express --save
 
+Instalar nodemon
+    npm install nodemon --save--dev
+
+Instalar Knex.js
+    npm install knex --save
+
+Instalar o SQLite3
+    npm install sqlite3 --save
+    
+Iniciar o Knex
+    npx knex init
+
+
+
+
+
+
+
+==========
+
 Criar pasta SRC
     - /controllers
     - /databasee
     - /routes
     - /utils
     - server.js
+
+
+Dentro de /routes criar um index.js e um arquivo para cada router
+    - index.js
+    - movies.routes.js
+        ...
+
+Dentro de /routes/index.js importar o express
+
+
+Dentro de server, posso chamar uma url da seguinte maneira
+    const Express = require("express")
+    const express = Express()
+
+    GET
+
+    1. express.get("/", function(request, response){
+        response.send("hello word")
+    })
+
+    2. express.get("/", (request, response) => {
+        response.send("hello word")
+    })
+
+
+    POST
+
+    1. express.post("/users", (request, response) => {
+        response.json({
+            "retorno" : "deu bom"
+        })
+    })
+
+
+Criar uma pasta /database e criar:
+    - /knex
+    - knex/index.js

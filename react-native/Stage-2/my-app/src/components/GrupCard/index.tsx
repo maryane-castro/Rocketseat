@@ -5,9 +5,9 @@ type Props = TouchableOpacityProps & {
     title: string;
 }
 
-export function GrupCard({ title }: Props){
+export function GrupCard({ title, ...rest }: Props){
     return(
-        <Container>
+        <Container {...rest}>
             <Icon/>
             <Title>
                 {title}

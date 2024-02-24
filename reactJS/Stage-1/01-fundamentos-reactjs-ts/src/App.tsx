@@ -6,12 +6,14 @@ import styles from "./App.module.css"
 
 import { Sidebar } from './components/Sidebar.tsx'
 import { Header } from './components/Header.tsx'
-import { Post } from './components/Post.tsx'
-
+import { Post, PostType } from './components/Post.tsx'
 
 // export componente 
 
-const posts = [
+
+
+
+const posts : PostType[] = [
   {
     id: 1,
     author: {
@@ -58,9 +60,7 @@ export function App() {
             return(
               <Post 
                 key={post.id}
-                author={post.author}
-                content={post.content}
-                publisheAd={post.publisheAd}
+                post={post}
               />
             )
           })}

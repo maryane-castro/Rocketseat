@@ -4,14 +4,27 @@ import ptBR from 'date-fns/locale/pt-BR'
 
 import { Comment } from './Comment';
 import { Avatar } from './Avatar';
-import { useState } from 'react';
+import { FormEvent, useState, ChangeEvent, InvalidEvent } from 'react';
 
 
+interface Content {
+  type: "paragraph" | "link",
+    content: string,
+}
 
 
+interface PostProps {
+  author: {
+    name: string,
+    role: string,
+    avatarUrl: string,
+  },
+  publisheAd: Date,
+  content: Content[]
+}
 
 
-export function Post({ author, content, publisheAd}) {
+export function Post({ author, content, publisheAd} : PostProps) {
 
 
 
@@ -19,7 +32,7 @@ export function Post({ author, content, publisheAd}) {
   const [newCommentText, setNewCommentText] = useState('') // inicia como uma str vazia
 
   const [comments, setComments] = useState([
-    
+    'teste'
   ]
   )
 
@@ -36,20 +49,20 @@ export function Post({ author, content, publisheAd}) {
 
   
   //funções
-  function handleCreateNewComment(event){
+  function handleCreateNewComment(event: FormEvent){
     event.preventDefault()
     setComments([...comments, newCommentText])
     setNewCommentText('')
 
   }
 
-  function handleNewCommentChange(event){
+  function handleNewCommentChange(event : ChangeEvent<HTMLTextAreaElement>){
     event.target.setCustomValidity('')
     setNewCommentText(event.target.value)
   }
 
 
-  function deleteComment(commentToDeleted){
+  function deleteComment(commentToDeleted : string){
 
     const commentsWithoutDeletedOne = comments.filter(comment => {
       return comment !== commentToDeleted
@@ -59,7 +72,7 @@ export function Post({ author, content, publisheAd}) {
   }
 
 
-  function handleNewCommentInvalid(event){
+  function handleNewCommentInvalid(event : InvalidEvent<HTMLTextAreaElement>){
     event.target.setCustomValidity('Este campo é obrigatorio')
   }
 

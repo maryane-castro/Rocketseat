@@ -1,13 +1,12 @@
 /* organização do app */
 
-import { useState } from 'react'
 import "./global.css"
 
 import styles from "./App.module.css"
 
-import { Sidebar } from './components/Sidebar'
-import { Header } from './components/Header'
-import { Post } from './components/Post'
+import { Sidebar } from './components/Sidebar.tsx'
+import { Header } from './components/Header.tsx'
+import { Post } from './components/Post.tsx'
 
 
 // export componente 
@@ -44,8 +43,8 @@ const posts = [
 ]
 
 
+
 export function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
